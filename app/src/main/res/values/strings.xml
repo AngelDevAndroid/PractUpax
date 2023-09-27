@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">PokeApiUpax</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="txt_image">Imagen</string>
+    <string name="txt_upax_menu_main">Upax</string>
+    <string name="btn_txt_image">Imagen</string>
+    <string name="btn_txt_poke">Pokemón</string>
 </resources>
