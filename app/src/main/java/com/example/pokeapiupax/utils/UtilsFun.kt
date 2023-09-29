@@ -30,8 +30,7 @@ class UtilsFun {
         }
 
         if (initialPlaceH[0].isDigit()
-            || !initialPlaceH[0].isLetter()
-        ) {
+            || !initialPlaceH[0].isLetter()) {
 
             Log.d("WORD_TXT", "placeH ->")
         } else {
