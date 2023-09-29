@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:id="@+id/content_image"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".FmtShowImageUrl">
+    tools:context=".ui.FmtShowImageUrl">
 
     <TextView
         android:id="@+id/tv_img_fmt"
@@ -33,7 +33,8 @@
             android:id="@+id/iv_image_url"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:scaleType="centerCrop" />
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"/>
 
     </androidx.cardview.widget.CardView>
 

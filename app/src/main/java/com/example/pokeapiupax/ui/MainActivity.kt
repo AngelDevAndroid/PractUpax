@@ -1,12 +1,12 @@
-package com.example.pokeapiupax
+package com.example.pokeapiupax.ui
 
 import android.os.Bundle
 import android.view.View
-import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
+import com.example.pokeapiupax.R
 import com.example.pokeapiupax.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun changeFragment(fmt: Fragment) {
 
-        setVisib(View.INVISIBLE, View.INVISIBLE, View.INVISIBLE)
+        setVisib(View.INVISIBLE)
 
         val fm: FragmentManager = supportFragmentManager
         val ft: FragmentTransaction = fm.beginTransaction()
@@ -57,12 +57,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
         onBackPressedDispatcher.onBackPressed()
-        setVisib(View.VISIBLE, View.VISIBLE, View.VISIBLE)
+        setVisib(View.VISIBLE)
     }
 
-    fun setVisib(visTxt: Int, visBtnImg: Int, visBtnPoke: Int) {
-        bindMain.tvUpax.visibility = visTxt
-        bindMain.btnFmtUrl.visibility = visBtnImg
-        bindMain.btnFmtPokemon.visibility = visBtnPoke
+    fun setVisib(enabVis: Int) {
+        bindMain.tvUpax.visibility = enabVis
+        bindMain.btnFmtUrl.visibility = enabVis
+        bindMain.btnFmtPokemon.visibility = enabVis
     }
 }
